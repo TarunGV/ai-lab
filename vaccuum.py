@@ -56,3 +56,24 @@ print("\nSome rooms are still dirty ")
 
 print("Final Room State:", room_state)
 print("Total Maintenance Cost:", cost)
+
+output
+
+
+Enter the location of vacuum cleaner (A or B): A
+Enter state of room A (0=Clean, 1=Dirty): 1
+Enter state of room B (0=Clean, 1=Dirty): 1
+
+
+Goal state is: {'A': '0', 'B': '0'}
+Initial Room state is: {'A': '1', 'B': '1'}
+Room A was dirty → Cleaned. Cost for cleaning A = 1
+Room A is clean → Moving from A to B. Cost = 1
+Room B was dirty → Cleaned. Cost for cleaning B = 1
+
+Goal Reached! 
+Final Room State: {'A': '0', 'B': '0'}
+Total Maintenance Cost: 3
+
+
+
