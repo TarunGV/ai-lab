@@ -75,3 +75,11 @@ result = forward_chaining(facts, rules)
 print("Inferred Facts:")
 for f in sorted(result):
     print(f)
+
+
+Inferred Facts:
+ancestor(john,alice)
+ancestor(john,mary)
+ancestor(mary,alice)
+parent(john,mary)
+parent(mary,alice)
