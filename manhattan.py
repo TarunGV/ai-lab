@@ -82,6 +82,111 @@ def hill_climbing_manhattan(start: State):
         print_board(current)
 
 
+
+Step 0 (Total Manhattan Distance = 4):
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|     |  7 |  8 |
++----+----+----+
+
+Successors of step 0:
+Move: Blank Up
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|     |  5 |  6 |
++----+----+----+
+|  4 |  7 |  8 |
++----+----+----+
+Total Manhattan Distance = 6
+
+Move: Blank Down
++----+----+----+
+|  4 |  2 |  3 |
++----+----+----+
+|  1 |  5 |  6 |
++----+----+----+
+|     |  7 |  8 |
++----+----+----+
+Total Manhattan Distance = 6
+
+Move: Blank Left
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|  7 |     |  8 |
++----+----+----+
+Total Manhattan Distance = 3
+
+Move: Blank Right
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|     |  7 |  8 |
++----+----+----+
+Total Manhattan Distance = 5
+
+
+Chosen successor for step 1: Blank moved Left (Total Manhattan Distance = 3)
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|  7 |     |  8 |
++----+----+----+
+
+Successors of step 1:
+Move: Blank Up
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |     |  6 |
++----+----+----+
+|  7 |  5 |  8 |
++----+----+----+
+Total Manhattan Distance = 4
+
+Move: Blank Left
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|     |  7 |  8 |
++----+----+----+
+Total Manhattan Distance = 4
+
+Move: Blank Right
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|  7 |  8 |     |
++----+----+----+
+Total Manhattan Distance = 2
+
+
+Chosen successor for step 2: Blank moved Right (Total Manhattan Distance = 2)
++----+----+----+
+|  1 |  2 |  3 |
++----+----+----+
+|  4 |  5 |  6 |
++----+----+----+
+|  7 |  8 |     |
++----+----+----+
+
+Reached goal with Manhattan Distance = 0
+
+
 if __name__ == "__main__":
     start = [1,2,3,4,5,6,None,7,8]
     hill_climbing_manhattan(start)
