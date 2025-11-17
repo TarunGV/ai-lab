@@ -67,3 +67,63 @@ print("Invalid move! Try again.")
 
 if __name__ == "__main__":
 play_game()
+
+
+  |   |  
+-----
+  |   |  
+-----
+  |   |  
+-----
+Player X's turn
+Enter row (0-2): 0
+Enter col (0-2): 0
+
+X |   |  
+-----
+  |   |  
+-----
+  |   |  
+-----
+Player O's turn
+Enter row (0-2): 1
+Enter col (0-2): 1
+
+X |   |  
+-----
+  | O |  
+-----
+  |   |  
+-----
+Player X's turn
+Enter row (0-2): 0
+Enter col (0-2): 1
+
+X | X |  
+-----
+  | O |  
+-----
+  |   |  
+-----
+Player O's turn
+Enter row (0-2): 2
+Enter col (0-2): 2
+
+X | X |  
+-----
+  | O |  
+-----
+  |   | O
+-----
+Player X's turn
+Enter row (0-2): 0
+Enter col (0-2): 2
+
+X | X | X
+-----
+  | O |  
+-----
+  |   | O
+-----
+ Player X wins!
+
