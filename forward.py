@@ -76,6 +76,7 @@ print("Inferred Facts:")
 for f in sorted(result):
     print(f)
 
+output
 
 Inferred Facts:
 ancestor(john,alice)
