@@ -72,3 +72,22 @@ KB = ('and', ('or', 'A', 'B'), ('or', ('not', 'A'), 'C'))
 alpha = 'B'
 
 tt_entails(KB, alpha)
+
+output
+
+Propositional Inference: Enumeration Method
+KB = (A ∨ B) ∧ (¬A ∨ C)
+α  = B
+
+ A  |  B  |  C  | A∨B | ¬A∨C |  KB  |  α  
+-------------------------------------------
+ False| False| False| False| True  | False| False
+ False| False| True | False| True  | False| False
+ False| True | False| True | True  | True | True 
+ False| True | True | True | True  | True | True 
+ True | False| False| True | False | False| False
+ True | False| True | True | True  | True | False
+ True | True | False| True | False | False| True 
+ True | True | True | True | True  | True | True 
+-------------------------------------------
+
