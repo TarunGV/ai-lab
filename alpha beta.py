@@ -47,3 +47,10 @@ def alpha_beta_search():
 
 if __name__ == "__main__":
     alpha_beta_search()
+
+output
+
+Values at each MIN node: [5, 11, 8, 5, 12, 13, 7, 10]
+Root (MAX) value: 13
+Pruned nodes: []
+
